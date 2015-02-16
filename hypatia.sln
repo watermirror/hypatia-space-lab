@@ -6,8 +6,17 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple_test", "simple_test\simple_test.vcxproj", "{AB1B71D3-7F64-46E0-B7A6-D5C10B9F56DF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ui_test", "ui_test\ui_test.vcxproj", "{3F5A2337-9D1D-4A6F-B5DA-697439CB07A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DF54502-E0AE-47BC-898E-000FA5B4CD50} = {1DF54502-E0AE-47BC-898E-000FA5B4CD50}
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D} = {1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ui", "ui\ui.vcxproj", "{1DF54502-E0AE-47BC-898E-000FA5B4CD50}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D} = {1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base", "base\base.vcxproj", "{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +36,10 @@ Global
 		{1DF54502-E0AE-47BC-898E-000FA5B4CD50}.Debug|Win32.Build.0 = Debug|Win32
 		{1DF54502-E0AE-47BC-898E-000FA5B4CD50}.Release|Win32.ActiveCfg = Release|Win32
 		{1DF54502-E0AE-47BC-898E-000FA5B4CD50}.Release|Win32.Build.0 = Release|Win32
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}.Debug|Win32.Build.0 = Debug|Win32
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}.Release|Win32.ActiveCfg = Release|Win32
+		{1EEC09C1-096F-4624-9B2D-C7F8D7229B4D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
